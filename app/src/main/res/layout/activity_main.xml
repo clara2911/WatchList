@@ -10,8 +10,37 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.clara.watchlist.MainActivity">
 
-    <TextView
+    <Button
+        android:text="My Movies"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:id="@+id/button2"
+        android:onClick="goToMyMovies"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textNoSuggestions"
+        android:ems="10"
+        android:id="@+id/inputTrack"
+        android:layout_below="@+id/button2"
+        android:layout_toLeftOf="@+id/button2"
+        android:layout_toStartOf="@+id/button2"
+        android:layout_marginTop="146dp" />
+
+    <Button
+        android:text="Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="33dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="29dp"
+        android:id="@+id/buttonMain"
+        android:onClick="trackSearch"
+        android:layout_below="@+id/inputTrack"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView" />
 </RelativeLayout>
